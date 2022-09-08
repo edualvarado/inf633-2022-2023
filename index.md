@@ -36,7 +36,6 @@
 	- [Evolution](#Session04Evolution)
 	- [Resources](#Session04Resources)
 	- [Extensions](#Session04Ideas)
-	- 
 - [Interesting Links](#InterestingLinks)
 
 ------
