@@ -458,7 +458,7 @@ The animals simulated here are designed to be herbivores, that eat by passing ov
 ```
 <p align=center>Code Snippet 7: Useful functions</p>
 
-<a name="Interesting Links"></a>
+<a name="InterestingLinks"></a>
 ## Interesting Links
 
 The senior students of this course did some great projects. You can find videos of some of them [at this link](https://drive.google.com/drive/folders/1NWgQykBFi_tK9gzEEJ9HMgwdi9v0VrOg?usp=sharing). May they inspire you!
