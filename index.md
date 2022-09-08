@@ -36,6 +36,8 @@
 	- [Evolution](#Session04Evolution)
 	- [Resources](#Session04Resources)
 	- [Extensions](#Session04Ideas)
+	- 
+- [Interesting Links](#InterestingLinks)
 
 ------
 
@@ -257,7 +259,7 @@ You can set the object that will be instantiated by drag-and-dropping a model in
 </p>
 
 To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the `terrain > Paint trees`
-tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode, as opposed to the brushes you implement.
+tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode in the Scene view (**not in the Game view!**), as opposed to the brushes you implement.
 
 <a name="Session02Brushideas"></a>
 ### Brush ideas
@@ -456,3 +458,14 @@ The animals simulated here are designed to be herbivores, that eat by passing ov
   void NeuralNet.mutate(...);
 ```
 <p align=center>Code Snippet 7: Useful functions</p>
+
+<a name="Interesting Links"></a>
+## Interesting Links
+
+The senior students of this course did some great projects. You can find videos of some of them [at this link](https://drive.google.com/drive/folders/1NWgQykBFi_tK9gzEEJ9HMgwdi9v0VrOg?usp=sharing). May they inspire you!
+
+Besides, other intersting links that can be useful:
+- [Ecosystems in Unity I](https://www.youtube.com/watch?v=r_It_X7v-1E&ab_channel=SebastianLague)
+- [Ecosystems in Unity II](https://www.youtube.com/watch?v=NHk7klC-p7k&ab_channel=BradMcDavitt)
+- [Ecosystems in Unity III](https://www.youtube.com/watch?v=0ZGbIKd0XrM&ab_channel=Primer)
+
