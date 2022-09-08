@@ -1,8 +1,8 @@
-# INF633 - Advanced 3D Graphics (2021 - 2022)
+# INF633 - Advanced 3D Graphics (2022 - 2023)
 
 ------
 
-[Github Repository](https://github.com/edualvarado/inf633-2021-2022) | [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
+[Github Repository](https://github.com/edualvarado/inf633-2022-2023) | [Github Page](https://edualvarado.github.io/inf633-2022-2023/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=14970)
 
 ------
 
@@ -17,25 +17,9 @@
 	- [Opening the project](#Openingtheproject)
 	- [Running the scene](#Runningthescene)
 - [Session 01 - Terrain Edition](#Session01)
-	- [Getting started](#Session01Gettingstarted)
-	- [Brush ideas](#Session01Brushideas)
-	- [Examples](#Session01Examples)
-	- [Useful functions and variables](#Session01Useful)
 - [Session 02 - Object Placement](#Session02)
-	- [Getting started](#Session02Gettingstarted)
-	- [Brush ideas](#Session02Brushideas)
-	- [Useful functions and variables](#Session02Useful)
 - [Session 03 - Character Animation](#Session03)
-	- [Getting started](#Session03Gettingstarted)
-	- [Fast IK Demo](#Session03FastIKDemo)
-	- [Quadruped with full IK](#Session03Quadruped)
-	- [Bonus: Controllable character with FK and IK](#Session03Human)
 - [Session 04 - Crowds and Evolution](#Session04)
-	- [Getting started](#Session04Gettingstarted)
-	- [Animals](#Session04Animals)
-	- [Evolution](#Session04Evolution)
-	- [Resources](#Session04Resources)
-	- [Extensions](#Session04Ideas)
 
 ------
 
@@ -44,11 +28,11 @@
 
 ### Introduction
 
-Welcome to the official page for the lab sessions of INF633! 
+Welcome to the official page for the lab sessions of INF633 for the course 2022-2023! 
 
 The goal of this project is to create, starting from a flat empty terrain, one with interesting features, objects and dynamic, living creatures all interacting together. For this, multiple edition tools will be created and basic principles of animation and crowd simulation used to give life to the virtual world.
 
-In this page, you will find the same introduction to install and setup Unity that you can find also in the README.md of the repository at [https://github.com/edualvarado/inf633-2021-2022](https://github.com/edualvarado/inf633-2021-2022), and also the description and content for each lab session.
+In this page, you will find the same introduction to install and setup Unity that you can find also in the README.md of the repository at [https://github.com/edualvarado/inf633-2022-2023](https://github.com/edualvarado/inf633-2022-2023), and also the description and content for each lab session.
 
 ### Installing Unity
 
@@ -56,7 +40,7 @@ Link to download: [https://unity.com/download](https://unity.com/download)
 
 - Download Unity Hub. It's a explorer tool for your projects where you can have simultaneously different Unity builds.
 - Create an Unity account: It will be required when you launch the program. You can select the free option for personal use.
-- Choose your Unity build. For this lab, we will be using **2020.3.21f1 LTS**
+- Choose your Unity build. For this lab, we will be using **2021.3.8f1 LTS**
 - Make sure you have a text editor installed and configured for C#. [Visual Studio Code](https://code.visualstudio.com/Download) is a popular option, but you can use any other code editor or IDE.
 - Now you should be able to open Unity. Make sure that you can successfully launch it, that your graphics drivers are working or that you do not have any particular problem.
 
@@ -73,7 +57,7 @@ Before even importing the lab project, let's have a general overview of Unity. F
 
 Unity uses a modular window system. That means, that each part of the interface can be reorganized and placed as you like. By default, Unity will show a similar appearance to this one:
 
-<img src="https://docs.unity3d.com/uploads/Main/Editor-Breakdown.png" alt="Image" style="zoom: 80%;" />
+<img src="https://docs.unity3d.com/2020.1/Documentation/uploads/Main/Editor-Breakdown.png" alt="Image" style="zoom: 80%;" />
 
 - **A - Top bar**. Here you can find some common tools such as Move, Rotate or Scale. Also, you can find the **Play** button to start your application, or **Pause** button, to stop it in the current frame. When it is paused, the **Step** button is available to go to the next frame.
 - **B - Hierarchy**. Here are all the elements in your *Scene*. Those elements (commonly named as *Game Objects* in Unity) can be anything: 3D models, cameras, illumination... On top of that, you find the *Scene*. A `Scene` is the parent element that serves as a environment where you place all your *Game Object*. 
@@ -172,23 +156,23 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 ### Examples
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/simple-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/simple-brush.gif" width="200">
 &nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/fixed-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/fixed-brush.gif" width="200">
 &nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/gauss-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/gauss-brush.gif" width="200">
 </p>
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/smooth-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/smooth-brush.gif" width="200">
 &nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/random-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/random-brush.gif" width="200">
 &nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/variablegauss-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/variablegauss-brush.gif" width="200">
 </p>
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/volcano.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/01-TerrainBrushGifs/volcano.gif" width="400">
 </p>
 
 <a name="Session01Useful"></a>
@@ -253,7 +237,7 @@ Like in the previous session, you can use this file as a base for your own brush
 You can set the object that will be instantiated by drag-and-dropping a model in the `Object_prefab` parameter of the terrain at run-time. A few models of trees are already in the project, in `04 - Terrain Assets > Environment > Trees` and then the file with a tree icon in one of the three sub-folders.
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/standard_trees.png" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/02-InstancesBrushGifs/standard_trees.png" width="400">
 </p>
 
 To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the `terrain > Paint trees`
@@ -273,11 +257,11 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 - You can try to create arrays of elements, and place them according to these rules (array with [palm, small tree, tall tree], and place them as a function of height ranges as shown in the figure below).
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/height_dependent.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/02-InstancesBrushGifs/height_dependent.gif" width="400">
 </p>
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/height_dependent_2.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/02-InstancesBrushGifs/height_dependent_2.gif" width="400">
 </p>
 
 ### Object ideas
@@ -333,13 +317,13 @@ However, you can use IK to animate whole characters as well. Procedural animatio
 In this session, we will learn to convert this...
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/no-procedural.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/03-CharacterAnimation/no-procedural.gif" width="400">
 </p>
 
 ...to this...
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/03-CharacterAnimation/procedural.gif" width="400">
 </p>
 
 All the necessary files will be in the folder `03 - Character Animation`. Let's start!
@@ -352,9 +336,9 @@ First, let's go to `03 - Character Animation > 00 - IK Demonstration`. In the sc
 This IK technique is called **Fabric IK**. A forward and backward pass are used to place an end-effector on a **target**, while a **pole** is used to define one of the multiple solutions that one target may contain.
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-target-1.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/03-CharacterAnimation/basic-ik-target-1.gif" width="200">
 	&nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-pole-1.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/03-CharacterAnimation/basic-ik-pole-1.gif" width="200">
 	&nbsp; &nbsp;
 </p>
 
@@ -374,7 +358,7 @@ All the necessary files are in `03 - Character Animation > 01 - Quadruped with f
 At the beginning, moving the **goal** will make the character to follow it without any animation, floating around and going inside the terrain when it gets higher. Your task is to make this character fully responsive when moving the goal. Again, these scripts contain code snippets that you will need to complete. All the information that you need to understand the code is already included as comments along the scripts.
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural-2.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2022-2023/03-CharacterAnimation/procedural-2.gif" width="400">
 </p>
 
 Once you have it, think about particular applications. Characters that follow autonomously a piece of food, or animals that run away from "anti-goals" such as predators. Could we even use some learning-based approach to teach them to follow certain assets? There are many options! We will see more in the next session.
