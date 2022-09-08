@@ -110,4 +110,3 @@ Some fast tips regarding the overall workflow in Unity:
   - Select the terrain and click on the **Use** button of one of the brushes
   - You can then paint on the terrain (in the game view) with your brush.
   - Click the **Play** button again to stop. Changes will be saved.
-
